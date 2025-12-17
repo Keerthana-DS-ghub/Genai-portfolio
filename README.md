@@ -5,6 +5,7 @@ The portfolio includes an interactive **AI assistant** designed to answer recrui
 
 🌐 **Live App:**  
 https://keerthana-ds-ghub-genai-portfolio-landing-dmqphl.streamlit.app/
+![GenAI Portfolio Preview](images/portfolio.png)
 
 ---
 
