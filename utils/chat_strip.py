@@ -78,8 +78,5 @@ def render_chat_strip(info, socials):
         st.markdown('</div>', unsafe_allow_html=True)
 
     if clicked:
-        st.markdown(
-            "<meta http-equiv='refresh' content='0; url=2_Chat_with_AI' />"
-,
-            unsafe_allow_html=True,
-        )
+        st.switch_page("pages/2_Chat_with_AI.py")
+
