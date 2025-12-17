@@ -1,0 +1,302 @@
+#styles_main.css
+
+:root { --nebula-1: #050A14; --nebula-2: #071A2F; --nebula-3: #0A2F52; --nebula-frost: rgba(6,12,25,0.56); }
+
+/* Highest-specificity selectors covering many Streamlit versions */
+html, body,
+div[role="application"],
+div[role="application"] > div:first-child,
+div[role="application"] > div:first-child > header,
+header, header[role="banner"],
+[data-testid="stHeader"], [data-testid="stToolbar"],
+nav[aria-label="Top navigation"], nav, #MainMenu,
+div[data-testid="root"], .block-container {
+  background: linear-gradient(135deg, var(--nebula-1) 0%, var(--nebula-2) 50%, var(--nebula-3) 100%) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #EAF9FF !important;
+  box-shadow: none !important;
+}
+
+/* Remove any inline pale/top backgrounds */
+*[style] {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* Toolbar/menu icons: blend & slight hover glow */
+[data-testid="stToolbar"] svg, header svg, #MainMenu svg {
+  filter: none !important;
+  color: #DCEFFF !important;
+}
+[data-testid="stToolbar"] svg:hover, header svg:hover, #MainMenu svg:hover {
+  filter: drop-shadow(0 0 8px rgba(51,184,255,0.14)) !important;
+}
+
+/* Ensure our top nav appears on top of everything */
+.chip-bar, .glass-nav, .st-topnav, .topnav {
+  z-index: 99999999 !important;
+}
+
+/* Keep core app panels transparent so the gradient shows through */
+.block-container, .stApp, .main {
+  background: transparent !important;
+}
+
+/* Smooth scroll safe */
+html { scroll-behavior: smooth; }
+
+
+/* Make the entire header transparent */
+header, [data-testid="stHeader"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Make Streamlit toolbar/menu match your dark theme */
+[data-testid="stToolbar"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Main menu dropdown icon */
+#MainMenu {
+    background: transparent !important;
+    color: #EAF9FF !important;
+}
+
+/* Footer (usually 'Made with Streamlit') */
+footer {
+    background: transparent !important;
+    color: #EAF9FF !important;
+}
+
+/* Remove any default white top padding/margin */
+div[role="application"] > div:first-child {
+    background: transparent !important;
+}
+
+
+/* ensure top area uses Nebula gradient */
+div[role="application"] > div:first-child { background: transparent !important; }
+
+/* Keep chip nav or top nav always above everything */
+.chip-bar, .glass-nav, .st-topnav {
+    z-index: 9999999 !important;
+}
+
+/* Enable smooth scrolling for section navigation */
+html { scroll-behavior: smooth; }
+
+/* ---------- Page background  ---------- */
+html, body, [data-testid="stAppViewContainer"], .main {
+    background: linear-gradient(135deg, #050A14 0%, #071A2F 50%, #0A2F52 100%) !important;
+    background-attachment: fixed !important;
+    color: #E8F6FF !important;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Make Streamlit blocks transparent ---------- */
+.block-container, .stApp, .main {
+    background: transparent !important;
+}
+
+/* ---------- Global text colors ---------- */
+p, span, label {
+    color: #DCEFFF !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #E6F7FF !important;
+    font-weight: 700;
+}
+
+small, .muted {
+    color: #9fc8e6 !important;
+}
+
+/* ---------- Links ---------- */
+a { color: #66d2ff !important; text-decoration: none !important; }
+a:hover { color: #33b8ff !important; text-decoration: underline !important; }
+
+/* ---------- Projects grid & cards ---------- */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 12px;
+  align-items: stretch;
+}
+
+.project-card {
+  width: 48% !important;
+  min-width: 260px;
+  background: linear-gradient(180deg, rgba(10,18,30,0.72), rgba(6,12,25,0.60)) !important;
+  border-radius: 14px !important;
+  padding: 18px !important;
+  box-shadow: 0 12px 36px rgba(3,8,18,0.6) !important;
+  border: 1px solid rgba(100,180,255,0.04) !important;
+  backdrop-filter: blur(8px) saturate(120%) !important;
+  transition: transform 240ms cubic-bezier(.2,.9,.2,1), 
+              box-shadow 240ms ease, 
+              border 240ms ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+  color: #E8F6FF !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* neon glow */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(10,160,220,0.04), rgba(0,0,0,0.02));
+  transition: box-shadow .3s ease, opacity .3s ease;
+  opacity: 0.6;
+  mix-blend-mode: screen;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(6,18,36,0.72);
+  border-color: rgba(10,160,220,0.22);
+}
+.project-card:hover::before {
+  box-shadow: 0 0 60px rgba(10,160,220,0.14);
+  opacity: 1;
+}
+
+/* project card image */
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+/* card content */
+.project-card .pc-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #EAF9FF;
+}
+.project-card .pc-desc {
+  font-size: 14px;
+  color: #B7DFF4;
+  margin-bottom: 10px;
+}
+
+/* responsive */
+@media (max-width: 1200px) { .project-card { width: 48% !important; } }
+@media (max-width: 900px) { .project-card { width: 100% !important; } }
+@media (max-width: 520px) { .project-card { width: 100% !important; padding: 14px !important; } }
+
+/* ---------- Global Holographic Buttons ---------- */
+.stButton > button {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(56,189,248,0.45), transparent 45%),
+      radial-gradient(circle at 80% 80%, rgba(99,102,241,0.45), transparent 45%),
+      linear-gradient(135deg, #0ea5e9, #38bdf8, #6366f1) !important;
+
+    color: #031725 !important;
+    border: 1px solid rgba(226,232,240,0.85) !important;
+    padding: 12px 22px !important;
+    border-radius: 999px !important;
+
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.02em;
+
+    box-shadow:
+      0 12px 32px rgba(14,165,233,0.35),
+      inset 0 0 14px rgba(255,255,255,0.25) !important;
+
+    transition:
+      transform .2s ease,
+      box-shadow .2s ease,
+      filter .2s ease !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-4px) scale(1.02) !important;
+    filter: brightness(1.08) !important;
+    box-shadow:
+      0 20px 48px rgba(99,102,241,0.45),
+      0 0 22px rgba(56,189,248,0.55) !important;
+}
+
+
+/* ---------- Certificates ---------- */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+@media (max-width:900px) { .cert-grid { grid-template-columns: 1fr; } }
+
+.cert-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(6,12,25,0.72), rgba(8,18,32,0.64));
+    border: 1px solid rgba(10,160,220,0.035);
+    box-shadow: 0 12px 32px rgba(6,12,25,0.72);
+    align-items: center;
+}
+
+.cert-thumb {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(10,160,220,0.04);
+}
+
+/* ---------- Contact section ---------- */
+.contact-section {
+  background: linear-gradient(180deg, rgba(8,16,28,0.82), rgba(6,12,25,0.76));
+  padding: 22px;
+  border-radius: 12px;
+  color: #E8F6FF;
+  margin-bottom: 20px;
+  border: 1px solid rgba(10,160,220,0.04);
+  box-shadow: 0 12px 32px rgba(6,12,25,0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* ---------- Hero section ---------- */
+.hero-container {
+    border-radius: 14px;
+    margin-bottom: 30px;
+    padding: 36px 20px;
+    background: linear-gradient(180deg, rgba(6,12,25,0.78), rgba(8,18,32,0.66));
+    border: 1px solid rgba(10,160,220,0.04);
+    box-shadow: 0 18px 48px rgba(4,10,18,0.72);
+}
+
+.hero-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #EAF9FF;
+}
+
+/* Ensure white text fix */
+.stMarkdown, .stText, .stColumn {
+    background: transparent !important;
+    color: #DCEFFF !important;
+}
+/* End of Blue Nebula CSS */

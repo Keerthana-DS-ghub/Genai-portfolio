@@ -1,0 +1,17 @@
+Keerthana S is a Data Scientist and LLMOps Engineer specializing in Generative AI, Retrieval-Augmented Generation (RAG), and production-ready AI applications. She has strong expertise in Python, SQL, LangChain, Streamlit, Watsonx.ai, Power BI, Tableau, and real-time data engineering.
+
+She builds intelligent systems end-to-end — from data extraction and preprocessing, to embeddings, vector search, prompt engineering, model deployment, and UI development. Her portfolio includes real-world GenAI applications, ML classification projects, NLP preprocessing pipelines, and dashboards for business decision-making.
+
+Keerthana’s major work includes:
+• A Watsonx-powered GenAI Portfolio App with custom LLM chat capabilities  
+• An AI RAG Assistant using LangChain, ChromaDB, and Gradio for PDF-based question answering  
+• Real-Time AMFI Mutual Fund Data Analysis using Python, MySQL, and Power BI visualizations  
+• NLP Text Preprocessing pipeline covering tokenization, lemmatization, stemming, and noise removal  
+• Credit Card Fraud Detection using Scikit-learn, SMOTE, and optimized models with high recall  
+• Hotel Booking Insights project using Pandas, Matplotlib, and 3-sigma outlier detection  
+
+She completed a Data Science + AI internship at Besant Technologies (Chennai) with hands-on work in Python, databases, machine learning, and dashboarding. She later interned at Zidio Development, applying ML models, optimizing pipelines, and working on real-world datasets.
+
+Keerthana holds an M.Sc. in Computer Science from Anna University and has complementary certifications in Generative AI, RAG, LangChain, and Tableau.
+
+She is passionate about designing reliable LLM applications, automating workflows, deploying scalable AI systems, and building user-friendly interfaces that demonstrate real business impact. She is actively growing her expertise in LLMOps, cloud-based deployment, and advanced GenAI architectures.

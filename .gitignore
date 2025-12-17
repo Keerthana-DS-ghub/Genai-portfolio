@@ -1,0 +1,17 @@
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Python cache
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Debug / local scripts (do NOT upload)
+diag_infer.py
+test_*.py
+quick_test_*.py
+preview_*.py
+read_env.py
+list_deployments.py
+backup/
