@@ -7,7 +7,7 @@ The portfolio includes an interactive **AI assistant** designed to answer recrui
 https://keerthana-ds-ghub-genai-portfolio-landing-dmqphl.streamlit.app/
 ![GenAI Portfolio Preview](images/portfolio.png)
 
----
+
 
 ## 🚀 Key Features
 - Live **AI-powered assistant** for recruiter and interview interactions  
@@ -16,7 +16,7 @@ https://keerthana-ds-ghub-genai-portfolio-landing-dmqphl.streamlit.app/
 - Multi-page navigation with production-ready deployment  
 - Secure secret management and cloud deployment on Streamlit Cloud  
 
----
+
 
 ## 🛠️ Tech Stack
 - **Frontend & App Framework:** Streamlit  
@@ -27,7 +27,7 @@ https://keerthana-ds-ghub-genai-portfolio-landing-dmqphl.streamlit.app/
 - **Version Control:** Git, GitHub  
 - **UI Customization:** HTML, CSS  
 
----
+
 
 ## 📌 Purpose
 
@@ -38,5 +38,5 @@ This project demonstrates my ability to:
 - Deploy and maintain **cloud-hosted AI systems**  
 - Design **clean, professional user interfaces** for real users  
 
----
+
 
