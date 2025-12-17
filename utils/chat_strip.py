@@ -79,6 +79,7 @@ def render_chat_strip(info, socials):
 
     if clicked:
         st.markdown(
-            "<meta http-equiv='refresh' content='0; url=Chat_with_AI' />",
+            "<meta http-equiv='refresh' content='0; url=2_Chat_with_AI' />"
+,
             unsafe_allow_html=True,
         )
